@@ -5,6 +5,7 @@ products
 about
 advantages
 gallery
-customer Reviews
+reviews
 contacts
 footer
+
