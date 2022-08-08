@@ -1,5 +1,9 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+// * {
+//   outline: 1px solid gold;
+// }
+
 body {
   font-family: var(--font-f__main), sans-serif;
   font-weight: var(--font-w__main);
@@ -18,7 +22,6 @@ img {
 }
 
 .container {
-  width: 100%;
   padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
