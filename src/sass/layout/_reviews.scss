@@ -1,0 +1,92 @@
+.reviews {
+  padding: 60px 0;
+}
+
+.reviews__list {
+  display: flex;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews__img {
+  margin-bottom: 32px;
+}
+
+.reviews__text-wrap {
+  padding: 43px 50px 17px;
+
+  background-color: var(--color__rewiers-desc-bg);
+  position: relative;
+
+  &::before {
+    content: '';
+  
+    position: absolute;
+    top: 30;
+    left: 53;
+  
+    display: block;
+    width: 54px;
+    height: 40px;
+  
+    background-image: url(../images/reviews/quote.svg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.reviews__text {
+  position: relative;
+  font-size: 12px;
+  line-height: 255%;
+  text-align: center;
+
+  padding: 0 12px;
+  
+  color: var(--color__b);
+
+  background-image: repeating-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 30px, #e1e1e1 30px, #e1e1e1 31px);
+  border-bottom: 1px solid #e1e1e1;
+  background-color: transparent;
+}
+
+.reviews__name{
+  &::before {
+    content: '';
+  
+    display: block;
+    width: 32px;
+    height: 4px;
+  
+    margin: 16px auto;
+  
+    background-image: url(../images/svg/ellipse_group.svg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-dots {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
