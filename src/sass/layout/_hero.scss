@@ -3,7 +3,16 @@
   & .container {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    position: relative;
+    padding-left: 20px;
+
+    @media screen and (min-width: 768px) {
+      padding: 0 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 0 16px;
+    }
   }
 }
 
@@ -21,10 +30,34 @@
   text-transform: uppercase;
   color: var(--color__w);
 
-  &--dedicated {
-    font-size: 48px;
-    line-height: 0.965;
-    color: var(--color__accent-first);
+  @media screen and (min-width: 768px) {
+    width: 162px;
+    margin-top: 102px;
+    font-size: 22px;
+    line-height: 1.136;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 277px;
+    margin-top: 147px;
+    font-size: 38px;
+    line-height: 1.158;
+    margin-bottom: 24px;
+  }
+}
+
+.hero__title--dedicated {
+  font-size: 48px;
+  line-height: 0.965;
+  color: var(--color__accent-first);
+
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: 0.905;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
   }
 }
 
@@ -32,38 +65,105 @@
   display: inline-flex;
   z-index: 5;
   gap: 8px;
+
+  @media screen and (min-width: 1200px) {
+    gap: 12px;
+  }
 }
 
 .hero-link {
   display: inline-flex;
   height: 24px;
-  border-radius: 20px;
   margin-bottom: 158px;
+  border-radius: 20px;
   align-items: center;
   justify-content: center;
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
 
-  &__products {
-    width: 62px;
-    color: var(--color__w);
-    background: var(--color__accent-first);
+  @media screen and (min-width: 768px) {
+    margin-bottom: 61px;
   }
 
-  &__how-made {
-    width: 83px;
-    color: var(--color__accent-first);
-    background: var(--color__w);
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 108px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 1.286;
+  }
+}
+
+.hero-link__products {
+  width: 62px;
+  color: var(--color__w);
+  background: var(--color__accent-first);
+
+  @media screen and (min-width: 1200px) {
+    width: 107px;
+  }
+}
+
+.hero-link__how-made {
+  width: 83px;
+  color: var(--color__accent-first);
+  background: var(--color__w);
+
+  @media screen and (min-width: 1200px) {
+    width: 138px;
   }
 }
 
 .subtitle-block {
   display: none;
+
+  @media screen and (min-width: 768px) {
+    display: initial;
+    width: 114px;
+    margin-left: 152px;
+    flex-direction: column;
+    z-index: 5;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.55;
+    color: var(--color__w);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 200px;
+    margin-left: 213px;
+    font-size: 14px;
+    line-height: 1.429;
+  }
+}
+
+.subtitle-block__button {
+  margin-top: 7px;
+  margin-bottom: 57px;
+  display: block;
+  border-radius: 50%;
+  z-index: 5;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 20px;
+    margin-bottom: 84px;
+  }
 }
 
 .offices {
   display: none;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    display: block;
+    top: 92px;
+    right: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 152px;
+    right: 16px;
+  }
 }
 
 .hero-img__ellipse {
@@ -71,7 +171,16 @@
   right: 0;
   top: 83px;
   z-index: 1;
-  //   transform: translateY(50%);
+
+  @media screen and (min-width: 768px) {
+    right: 185px;
+    top: 43px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    right: 149px;
+    top: 54px;
+  }
 }
 
 .hero-img__ice-cream {
@@ -79,12 +188,48 @@
   right: 32px;
   top: 92px;
   z-index: 2;
+
+  @media screen and (min-width: 768px) {
+    right: 303px;
+    top: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    right: 328px;
+    top: 108px;
+  }
 }
 
 .hero-img__milk {
   display: none;
+
+  @media screen and (min-width: 768px) {
+    display: inherit;
+    position: absolute;
+    left: 32px;
+    bottom: 16px;
+    z-index: 3;
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: 16px;
+    bottom: 60px;
+  }
 }
 
 .hero-img__girl {
   display: none;
+
+  @media screen and (min-width: 768px) {
+    display: inherit;
+    position: absolute;
+    right: 32px;
+    bottom: 1px;
+    z-index: 4;
+  }
+
+  @media screen and (min-width: 1200px) {
+    right: 16px;
+    bottom: 0;
+  }
 }

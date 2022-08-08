@@ -17,9 +17,26 @@
         type="button"
         aria-label="read more"
       >
-        <svg>
-          <use></use>
-        </svg>
+        <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/hero/arrow_lg.png    1x,
+          ./images/hero/arrow_lg@2x.png 2x
+        "
+        type="image/png"
+      />
+
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero/arrow_md.png    1x,
+          ./images/hero/arrow_md@2x.png 2x
+        "
+        type="image/png"
+      />
+
+      <img src="./images/hero/arrow_md.png" alt="arrow" />
+    </picture>
       </button>
     </div>
     <div class="offices">
