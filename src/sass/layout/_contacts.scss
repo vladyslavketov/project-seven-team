@@ -42,14 +42,22 @@
   border-radius: 24px;
   padding: 40px 32px;
 
+  transition: 500ms;
+  transition-property: filter, transform;
+
   @media screen and(min-width:768px) {
     max-width: 224px;
   }
 
   @media screen and(min-width:1200px) {
-    max-width: 368px;
+    min-width: 368px;
+  }
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
   }
 }
+
 .contacts__rec:not(:last-child) {
   margin-bottom: 20px;
 
@@ -60,23 +68,20 @@
 .contacts__cafe {
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
   justify-content: center;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
   letter-spacing: 0.04em;
+  font-size: 12px;
+  font-weight: 400;
 
   color: var(--color__w);
   background: var(--color__products-2);
   border-radius: 4px;
 
   width: 80px;
-  height: 16px;
+  height: 19;
 
   @media screen and(min-width:768px) {
-    font-size: 16px;
-    line-height: 1.12;
     width: 73px;
     height: 28px;
   }
@@ -86,11 +91,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
+
   font-size: 12px;
-  line-height: 1.5;
+  font-weight: 400;
+  line-height: 1.76;
   letter-spacing: 0.04em;
 
   color: var(--color__w);
@@ -99,11 +103,9 @@
 
   text-align: center;
   width: 130px;
-  height: 16px;
+  height: 19px;
 
   @media screen and(min-width:768px) {
-    font-size: 16px;
-    line-height: 1.12;
     width: 138px;
     height: 28px;
   }
@@ -115,7 +117,6 @@
 
 .contacts__city {
   font-family: DM Sans;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
@@ -126,7 +127,7 @@
 
   @media screen and(min-width:768px) {
     font-size: 14px;
-    // line-height: 1.3;
+    line-height: 1.3;
     margin-top: 32px;
   }
 
@@ -140,7 +141,6 @@
 .contacts__text {
   display: block;
   font-family: DM Sans;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
@@ -149,6 +149,7 @@
   margin-top: 8px;
   border-bottom: 1px solid #e1e1e1;
   padding-bottom: 24px;
+  max-width: 179px;
 
   @media screen and(min-width:768px) {
     font-size: 14px;
@@ -162,12 +163,12 @@
     line-height: 1.7;
     margin-top: 8px;
     padding-bottom: 32px;
+    max-width: 243px;
   }
 }
 
 .contacts__day {
   font-family: DM Sans;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.55;
@@ -187,11 +188,11 @@
   }
 }
 
-.contacts__day-time {
+.contacts__work-time {
   color: var(--color__accent-second);
 }
 
-.contacts__day-week:not(:first-child) {
+.contacts__work-days:not(:first-child) {
   margin-top: 12px;
 }
 
@@ -213,7 +214,6 @@
 
 .contacts__cont-pam {
   font-family: DM Sans;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
@@ -239,7 +239,6 @@
 
 .contacts__btn {
   display: flex;
-
   flex-direction: column;
   align-items: center;
   cursor: pointer;
@@ -255,7 +254,6 @@
 
 .our__btn {
   font-family: DM Sans;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
@@ -280,12 +278,12 @@
 
   &:hover {
     background: #c7133e;
+    transition: 250ms;
   }
 }
 
 .franch__btn {
   font-family: DM Sans;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
@@ -309,4 +307,5 @@
 }
 .franch__btn:hover {
   background: var(--color__btn-hover-bg);
+  transition: 250ms;
 }
