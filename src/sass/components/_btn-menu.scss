@@ -1,0 +1,27 @@
+.btn-menu {
+    @media screen and (min-width: 1200px) {
+      display: none;
+      }
+    background-color: transparent;
+    margin-left: auto;
+
+    &__burger {
+        transition: 250ms;
+    
+        &.is-open & {
+            opacity: 0;
+        }
+    }
+    
+    &__close {
+        opacity: 0;
+        transition: 250ms;
+    
+        &.is-open & {
+            opacity: 1;
+        }
+    }
+  }
+  
+
+  
