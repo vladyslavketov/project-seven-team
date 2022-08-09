@@ -1,7 +1,3 @@
-.modal__open-btn--read {
-  @extend .modal__open-btn--temp;
-}
-
 .modal__close-btn--read {
   color: var(--color__b);
   border-color: var(--color__b);
@@ -15,3 +11,4 @@
 
 .modal__close-icon--read {
   fill: currentColor;
+}
