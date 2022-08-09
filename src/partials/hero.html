@@ -1,10 +1,12 @@
 <section class="hero">
   <div class="container">
     <h1 class="hero__title">
-      ice cream made with<span class="hero__title--dedicated">passion</span>
+      ice cream made with <span class="hero__title--dedicated">passion</span>
     </h1>
-    <a class="link link__products">Products</a>
-    <a class="link link__how-made">How it’s made?</a>
+    <div class="hero-link-section">
+      <a class="hero-link hero-link__products" href="#products">Products</a>
+      <a class="hero-link hero-link__how-made" href="#made">How it’s made?</a>
+    </div>
     <div class="subtitle-block">
       <p class="hero__subtitle">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -15,21 +17,40 @@
         type="button"
         aria-label="read more"
       >
-        <svg>
-          <use></use>
-        </svg>
+        <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/hero/arrow_lg.png    1x,
+          ./images/hero/arrow_lg@2x.png 2x
+        "
+        type="image/png"
+      />
+
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero/arrow_md.png    1x,
+          ./images/hero/arrow_md@2x.png 2x
+        "
+        type="image/png"
+      />
+
+      <img src="./images/hero/arrow_md.png" alt="arrow" />
+    </picture>
       </button>
     </div>
     <div class="offices">
       <ul class="offices__list">
-        <li class="offices__item">
-          <p class="offices__title">
-            <span class="offices__title--dedicated">16</span>cafes
+        <li class="offices__item--upper">
+          <p class="offices__title">16</p>
+          <p class="offices__subtitle">
+            cafes
           </p>
         </li>
         <li class="offices__item">
-          <p class="offices__title">
-            <span class="offices__title--dedicated">23</span>food trucks
+          <p class="offices__title">23</p>
+          <p class="offices__subtitle">
+            food trucks
           </p>
         </li>
       </ul>
