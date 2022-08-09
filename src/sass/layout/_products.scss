@@ -99,13 +99,13 @@
     @extend %cardSet__item;
 
     @media screen and (min-width:768px) {
-        padding: 118px 32px 32px 40px;
+        padding: 118px 32px 40px 32px;
 
         --items: 3;
     }
 
     @media screen and (min-width:1200px) {
-        padding: 165px 64px 64px 60px;
+        padding: 165px 64px 60px 64px;
     }
 
     &:hover,
@@ -170,7 +170,6 @@
             }    
         }  
     }
-
 }
 
 .products__item--second {
@@ -300,6 +299,10 @@
     @media screen and (min-width:768px){  
         line-height: 1.76;       
     }
+
+    @media screen and (min-width:1200px){  
+        font-size: 16px;
+    }
     
     &:before {
         content: "•••";
@@ -316,7 +319,55 @@
     }
 }
 
-.products__btn{
+.products__card {
+    position: relative;
+}
+
+.products__detailed {
+    height: 240px;
+    overflow: hidden;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--color__w);
+
+    text-align: center;
+    position: absolute;
+    top: 0;
+
+    @media screen and (min-width: 768px) {
+        height: 290px;
+        
+        line-height: 1.76;
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 300px;
+
+        font-size: 16px;
+    }
+
+    &.is-hidden {
+        opacity: 0;
+    }
+
+    .products__item:nth-child(1) & {
+        background-color: var(--color__products-1);
+    }
+    
+    .products__item:nth-child(2) & {
+            background-color: var(--color__products-2);
+    }
+    
+    .products__item:nth-child(3) & {
+        background-color:var(--color__products-3);
+    }
+}
+
+.products__btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -327,13 +378,34 @@
     border-radius: 50%;
 
     fill: var(--color__accent-first);
-    transition: background-color var(--main__transition), fill var(--main__transition) ;
+    transition: background-color var(--main__transition), fill var(--main__transition);
 
-    cursor:pointer;
+    cursor: pointer;
 
     &:hover,
     &:focus {
-        background-color: var(--color__btn-location-bg);
-        fill: var(--color__w)
+        fill: var(--color__w);
     }
 }
+
+.products__btn--first{
+    &:hover,
+    &:focus {
+        background-color: #e9708e;
+    }
+}
+
+.products__btn--second {
+    &:hover,
+    &:focus {
+        background-color: #ecb86e;
+    }
+}
+
+.products__btn--third {
+    &:hover,
+    &:focus {
+        background-color: #a0da55;
+    }
+}
+
