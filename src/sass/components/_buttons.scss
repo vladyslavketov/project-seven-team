@@ -1,29 +1,6 @@
  
-    .button {
-        @media screen and (max-width: 767px) {
-            display: none;
-            }
-        
-            background: var(--color__w);
-        border-radius: 22px;
-        
-        &__header {
-            @media screen and (min-width: 768px) {
-            //   margin-left: auto;
-                }
-            margin-left: 32px;
-            width: 160px;
-            height: 44px;
-        }
-        &__header:hover {
-            cursor: pointer;
-       background-color: var(--color__btn-hover-bg);
-        }
-        &__title{
-            font-weight: 700;
-        color: var(--color__accent-first);
-            padding-right: 12px;
-        }
-    
-        }
+ .button {
+    height: 44px;
 
+    border-radius: 22px;
+ }
