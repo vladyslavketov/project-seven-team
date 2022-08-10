@@ -37,7 +37,7 @@
 .advantages__number {  
   font-family: var(--font-f__secondary);
   font-size: 36px;
-  line-height: (41px / 36px);
+  line-height: calc(41px / 36px);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--color__accent-first);
