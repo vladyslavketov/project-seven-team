@@ -90,12 +90,14 @@
   border-radius: 50%;
   background-color: var(--color__socials);
   transform: scale(1);
+  transition: background-color var(--main__transition),
+    scale var(--main__transition);
 }
 
 .social-links__link:hover,
 .social-links__link:focus {
   background-color: var(--color__accent-first);
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 
 .social-links__icon {
@@ -165,27 +167,28 @@
   cursor: pointer;
   visibility: hidden;
   opacity: 0;
-  transition: 0.5s;
+  transition: var(--main__transition);
 
   @media screen and (min-width: 1410px) {
     right: calc(((100% - 1200px) / 2) - 70px);
   }
 }
 
-.upward.active {
-  bottom: 35px;
-  visibility: visible;
-  opacity: 0.8;
+.btn__upward {
+    fill: var(--color__accent-first);
+    fill: var(--color__w);
 
-  &:hover {
-    opacity: 1;
-  }
+    transform: rotate(-90deg);
+    opacity: 0.8;
 }
 
-.btn__upward {
-  fill: var(--color__accent-first);
-  fill: var(--color__w);
+.upward.active {
+    bottom: 35px;
+    visibility: visible;
+    opacity: 0.8;
 
-  transform: rotate(-90deg);
-  opacity: 0.8;
+    &:hover {
+        opacity: 1;
+        transform: scale(1.1);
+    }
 }
