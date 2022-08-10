@@ -50,6 +50,8 @@
   font-size: 48px;
   line-height: 0.965;
   color: var(--color__accent-first);
+  transform: translateX(-1000%);
+  transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1) 3s;
 
   @media screen and (min-width: 768px) {
     font-size: 34px;
@@ -315,4 +317,37 @@
     right: 16px;
     bottom: 0;
   }
+}
+
+// Animation
+
+.ice-cream {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out 1.7s;
+}
+
+.made {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out 2s;
+}
+
+.with {
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.19, 1, 0.22, 1) 2.3s;
+}
+
+.animate .ice-cream {
+  opacity: 1;
+}
+
+.animate .made {
+  opacity: 1;
+}
+
+.animate .with {
+  opacity: 1;
+}
+
+.animate .hero__title--dedicated {
+  transform: translateX(0);
 }

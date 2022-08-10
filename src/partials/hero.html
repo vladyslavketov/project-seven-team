@@ -1,7 +1,9 @@
 <section class="hero">
   <div class="container">
     <h1 class="hero__title">
-      ice cream made with <span class="hero__title--dedicated">passion</span>
+      <span class="ice-cream">ice cream</span> <span class="made">made</span>
+      <span class="with">with</span>
+      <div class="hero__title--dedicated">passion</div>
     </h1>
     <div class="hero-link-section">
       <a class="hero-link hero-link__products" href="#products">Products</a>
@@ -17,41 +19,38 @@
         type="button"
         aria-label="read more"
       >
-        <source
-        media="(min-width: 1200px)"
-        srcset="
-          ./images/hero/arrow_lg.png    1x,
-          ./images/hero/arrow_lg@2x.png 2x
-        "
-        type="image/png"
-      />
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/hero/arrow_lg.png    1x,
+              ./images/hero/arrow_lg@2x.png 2x
+            "
+            type="image/png"
+          />
 
-      <source
-        media="(min-width: 768px)"
-        srcset="
-          ./images/hero/arrow_md.png    1x,
-          ./images/hero/arrow_md@2x.png 2x
-        "
-        type="image/png"
-      />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/hero/arrow_md.png    1x,
+              ./images/hero/arrow_md@2x.png 2x
+            "
+            type="image/png"
+          />
 
-      <img src="./images/hero/arrow_md.png" alt="arrow" />
-    </picture>
+          <img src="./images/hero/arrow_md.png" alt="arrow" />
+        </picture>
       </button>
     </div>
     <div class="offices">
       <ul class="offices__list">
         <li class="offices__item--upper">
           <p class="offices__title">16</p>
-          <p class="offices__subtitle">
-            cafes
-          </p>
+          <p class="offices__subtitle">cafes</p>
         </li>
         <li class="offices__item">
           <p class="offices__title">23</p>
-          <p class="offices__subtitle">
-            food trucks
-          </p>
+          <p class="offices__subtitle">food trucks</p>
         </li>
       </ul>
     </div>
