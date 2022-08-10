@@ -42,55 +42,55 @@
   }
 }
 
-.lable {
-  font-family: 'Titan One';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.17;
+// .lable {
+//   font-family: 'Titan One';
+//   font-weight: 400;
+//   font-size: 18px;
+//   line-height: 1.17;
 
-  @media screen and (min-width: 768px) {
-    font-size: 26px;
-    text-align: center;
-  }
+//   @media screen and (min-width: 768px) {
+//     font-size: 26px;
+//     text-align: center;
+//   }
 
-  @media screen and (min-width: 1200px) {
-    font-size: 30px;
-    line-height: 1.14;
-  }
+//   @media screen and (min-width: 1200px) {
+//     font-size: 30px;
+//     line-height: 1.14;
+//   }
 
-  color: var(--color__accent-second);
+//   color: var(--color__accent-second);
 
-  text-align: center;
-  text-transform: uppercase;
+//   text-align: center;
+//   text-transform: uppercase;
 
-  margin-bottom: 15px;
-}
+//   margin-bottom: 15px;
+// }
 
-.title {
-  font-family: 'Titan One';
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 1.15;
-  letter-spacing: 0.04em;
+// .title {
+//   font-family: 'Titan One';
+//   font-weight: 400;
+//   font-size: 34px;
+//   line-height: 1.15;
+//   letter-spacing: 0.04em;
 
-  @media screen and (min-width: 768px) {
-    font-size: 48px;
-    text-align: center;
-  }
+//   @media screen and (min-width: 768px) {
+//     font-size: 48px;
+//     text-align: center;
+//   }
 
-  @media screen and (min-width: 1200px) {
-    font-size: 58px;
-    line-height: 1.14;
-    margin-bottom: 60px;
-  }
+//   @media screen and (min-width: 1200px) {
+//     font-size: 58px;
+//     line-height: 1.14;
+//     margin-bottom: 60px;
+//   }
 
-  text-align: center;
-  text-transform: uppercase;
+//   text-align: center;
+//   text-transform: uppercase;
 
-  color: var(--color__accent-first);
+//   color: var(--color__accent-first);
 
-  margin-bottom: 32px;
-}
+//   margin-bottom: 32px;
+// }
 
 .about__info {
   @media screen and (min-width: 768px) {
