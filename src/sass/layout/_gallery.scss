@@ -1,29 +1,31 @@
 .gallery {
+  background-image: linear-gradient(
+    to top,
+    var(--color__w) 66.02%,
+    var(--color__footer-bg) 66.02%
+  );
+
+  @media screen and(min-width:768px) {
     background-image: linear-gradient(
-        to bottom,
-        var(--color__footer-bg) 17%,
-        var(--color__w) 17%
-      );
+      to top,
+      var(--color__w) 44.74%,
+      var(--color__footer-bg) 44.74%
+    );
+  }
 
+  @media screen and(min-width:1200px) {
+    background-image: linear-gradient(
+      to top,
+      var(--color__w) 68.79%,
+      var(--color__footer-bg) 68.79%
+    );
 
-    @media screen and(min-width:768px) {
-        background-image: linear-gradient(
-            to bottom,
-            var(--color__footer-bg) 55%,
-            var(--color__w) 55%
-          );
-        }
-      
-    
-      @media screen and(min-width:1200px) {
-          background-image: linear-gradient(
-            to bottom,
-            var(--color__footer-bg) 21%,
-            var(--color__w) 21%
-          );
-      }
-      }
-
+    &.section {
+      padding-top: calc(var(--section__padding)*2);
+      padding-bottom: calc(var(--section__padding)*2);
+    }
+  }
+}
 
 @media screen and(max-width: 1199px) {
   .gallery .container {
@@ -49,9 +51,24 @@
 
 .gallery__img {
   display: block;
+  
+  transition: var(--main__transition) ;
+
+  
+  // transition-delay: 300ms;
+  &:hover {
+    transform: scale(1.25);
+  }
 }
+
+.gallery__img img{
+  pointer-events: none;
+}
+
 .gallery__img:not(:first-child) {
   margin-top: 2.53px;
+
+
 
   @media screen and(min-width:768px) {
     margin-top: 6.05px;
@@ -60,6 +77,7 @@
   @media screen and(min-width:1200px) {
     margin-top: 8px;
   }
+
 }
 
 .gallery__item:first-child {
@@ -68,6 +86,7 @@
 
 .gallery__item:nth-child(2) {
   margin-top: 7.7%;
+
 }
 
 .gallery__item:nth-child(4) {

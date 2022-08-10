@@ -1,9 +1,9 @@
 <footer class="footer">
   <div class="container">
     <div class="footer__bloc">
-      <div class="footer__title">
-        <p class="footer__title-main">homemade ice cream made</p>
-        <p class="footer__title-secondary">with passion</p>
+      <div class="footer__title-wrap">
+        <p class="footer__uppertitle uppertitle">homemade ice cream made</p>
+        <p class="footer__title title">with passion</p>
       </div>
       <div>
         <ul class="social-links">
@@ -14,7 +14,8 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="git hub"
-              ><svg class="social-links__icon" width="20" height="20">
+              >
+              <svg class="social-links__icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-github_social"></use>
               </svg>
             </a>
@@ -26,7 +27,8 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="telegram"
-              ><svg class="social-links__icon" width="20" height="20">
+              >
+              <svg class="social-links__icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-telegram_social"></use>
               </svg>
             </a>
@@ -38,7 +40,8 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="facebook"
-              ><svg class="social-links__icon" width="20" height="20">
+              >
+              <svg class="social-links__icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-facebook_social"></use>
               </svg>
             </a>
@@ -46,14 +49,29 @@
         </ul>
         <div class="tel">
           <p class="tel__title">Feel free to contact</p>
-          <a class="tel__number" href="tel:+380961111111"
-            >+61 (0) 383 766 284</a
-          >
+          <a class="tel__number" href="tel:+380961111111">+61 (0) 383 766 284</a>
         </div>
       </div>
     </div>
     <div class="copyrigh">
-      <p class="copyrigh__info">© 2022 - IceCream. All Rights Reserved.</p>
+      <p class="copyrigh__info">&#169 2022 - IceCream. All Rights Reserved.</p>
     </div>
   </div>
+  <button class="upward" onclick="scrollTopTop()">
+    <svg class="btn__upward" width="20" height="20">
+      <use href="./images/icons.svg#icon-arrow_products"></use>
+    </svg>
+  </button>
 </footer>
+<script>
+  window.addEventListener('scroll', function(){
+    var scroll = document.querySelector('.upward');
+    scroll.classList.toggle("active", window.scrollY>500)
+  })
+  function scrollTopTop(){
+    window.scrollTo({
+      top:0,
+      behavior:"smooth"
+    })
+  }
+</script>

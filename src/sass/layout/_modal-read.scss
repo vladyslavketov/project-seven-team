@@ -1,0 +1,14 @@
+.modal__close-btn--read {
+  color: var(--color__b);
+  border-color: var(--color__b);
+
+  &:hover,
+  &:focus {
+    color: var(--color__accent-first);
+    border-color: var(--color__accent-first);
+  }
+}
+
+.modal__close-icon--read {
+  fill: currentColor;
+}

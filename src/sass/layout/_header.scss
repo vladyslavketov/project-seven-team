@@ -1,16 +1,17 @@
 .header {
- background-color: var(--color__products-1);
-  &__container {
-    @media screen and (min-width: 1200px) {
-      padding-top: 55px;
-      padding-bottom: 35px;
-      }
-    display: flex;
-    align-items: center;
-    padding-top: 8px;
-  }
+   background-color: var(--color__products-1);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
 }
 
+.header__container {
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
 
-
-
+  @media screen and (min-width: 1200px) {
+    padding-top: 55px;
+    padding-bottom: 35px;
+  }
+}
