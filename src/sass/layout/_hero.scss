@@ -5,6 +5,7 @@
     flex-direction: column;
     position: relative;
     padding-left: 20px;
+    overflow: hidden;
 
     @media screen and (min-width: 768px) {
       padding: 0 32px;
@@ -46,12 +47,44 @@
   }
 }
 
+.ice-cream {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out 0.1.5s;
+
+  .animate & {
+    opacity: 1;
+  }
+}
+
+.made {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out 0.5s;
+
+  .animate & {
+    opacity: 1;
+  }
+}
+
+.with {
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+
+  .animate & {
+    opacity: 1;
+  }
+}
+
 .hero__title--dedicated {
+  display: inline-block;
   font-size: 48px;
   line-height: 0.965;
   color: var(--color__accent-first);
-  transform: translateX(-1000%);
-  transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1) 3s;
+  transform: translateX(-120%);
+  transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+
+  .animate & {
+    transform: translateX(0);
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 34px;
@@ -100,6 +133,13 @@
   width: 62px;
   color: var(--color__w);
   background: var(--color__accent-first);
+  transition: background var(--main__transition);
+  animation: fadeIn 0.75s;
+
+  &:hover,
+  &:focus {
+    background: #b5101b;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 107px;
@@ -110,6 +150,13 @@
   width: 83px;
   color: var(--color__accent-first);
   background: var(--color__w);
+  transition: background var(--main__transition);
+  animation: fadeIn 1.5s;
+
+  &:hover,
+  &:focus {
+    background: var(--color__btn-hover-bg);
+  }
 
   @media screen and (min-width: 1200px) {
     width: 138px;
@@ -129,6 +176,7 @@
     font-size: 8px;
     line-height: 1.55;
     color: var(--color__w);
+    animation: fadeIn 1.5s;
   }
 
   @media screen and (min-width: 1200px) {
@@ -160,6 +208,7 @@
     display: block;
     top: 92px;
     right: 32px;
+    animation: fadeIn 1.5s;
   }
 
   @media screen and (min-width: 1200px) {
@@ -186,6 +235,7 @@
   position: relative;
   padding-top: 1px;
   padding-right: 8px;
+  animation: fadeIn 1.5s;
 
   @media screen and (min-width: 1200px) {
     padding-top: 3px;
@@ -200,6 +250,7 @@
   position: relative;
   padding-top: 2px;
   padding-right: 10px;
+  animation: fadeIn 0.75s;
 
   @media screen and (min-width: 1200px) {
     padding-top: 4px;
@@ -214,7 +265,7 @@
   font-size: 28px;
   line-height: 1.143;
   text-transform: uppercase;
-  color: #d41443;
+  color: var(--color__accent-first);
 
   @media screen and (min-width: 1200px) {
     font-size: 46px;
@@ -256,6 +307,7 @@
   right: 0;
   top: 83px;
   z-index: 1;
+  animation: scaleIn 1.5s;
 
   @media screen and (min-width: 768px) {
     right: 185px;
@@ -273,6 +325,7 @@
   right: 32px;
   top: 92px;
   z-index: 2;
+  animation: scaleInOut 2.5s;
 
   @media screen and (min-width: 768px) {
     right: 303px;
@@ -294,6 +347,7 @@
     left: 32px;
     bottom: 16px;
     z-index: 3;
+    animation: leftSide ease-in 1.5s;
   }
 
   @media screen and (min-width: 1200px) {
@@ -311,6 +365,7 @@
     right: 32px;
     bottom: 1px;
     z-index: 4;
+    animation: fadeInLong 3.5s;
   }
 
   @media screen and (min-width: 1200px) {
@@ -319,35 +374,71 @@
   }
 }
 
-// Animation
-
-.ice-cream {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out 1.7s;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.made {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out 2s;
+@keyframes fadeInLong {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.with {
-  opacity: 0;
-  transition: opacity 0.3s cubic-bezier(0.19, 1, 0.22, 1) 2.3s;
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.3);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-.animate .ice-cream {
-  opacity: 1;
+@keyframes scaleInOut {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  75% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  90% {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-.animate .made {
-  opacity: 1;
-}
-
-.animate .with {
-  opacity: 1;
-}
-
-.animate .hero__title--dedicated {
-  transform: translateX(0);
+@keyframes leftSide {
+  0% {
+    transform: translateX(-150%);
+  }
+  40% {
+    transform: translateX(-100%) rotate(-45deg);
+  }
+  60% {
+    transform: translateX(-50%) rotate(-45deg);
+  }
+  75% {
+    transform: translateX(0) rotate(0deg);
+  }
+  90% {
+    transform: translateX(0) rotate(15deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0);
+  }
 }
