@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <header class="header">
   <div class="container header__container">
     <a class="logo" href="#" aria-label="logo">
@@ -6,37 +5,63 @@
         <use href=".//images/icons.svg#logo"></use>
       </svg>
     </a>
-    <button class="btn-menu" type="button" data-menu-button>
-      <svg class="btn-menu__icon" width="20" height="12">
-        <use class="btn-menu__burger" href=".//images/icons.svg#icon-burger-open"></use>
-        <use class="btn-menu__close" href=".//images/icons.svg#icon-burger-close"></use>
+    <button class="btn-menu" type="button" aria-expanded="false" data-menu-button>
+      <svg width="20" height="12" aria-label="switsh mobile menu">
+        <use class="icon__burger" href=".//images/icons.svg#burger"></use>
+        <use class="icon__close" href=".//images/icons.svg#close"></use>
       </svg>
     </button>
       <nav class="nav">
-        <ul class="nav__list">
-
-          <li class="nav__item ">
-            <li class="nav__item"><a class="nav__link" href="./index.html">Home</a></li>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#about">About us</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#about">How it’s made?</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#products">Our products</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#contacts">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link nav__link--current" href="./index.html">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#about">About us</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#about">How it’s made?</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#products">Our products</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#contacts">Contact</a>
+        </li>
+      </ul>
+    </nav>
       <button class="button button__header" type="button" data-modal-open--buy>
         <span class="button__title">Buy now</span>
         <svg class="icon__vector" width="4" height="8">
-          <use class="vector" href=".//images/icons.svg#vector-button"></use>
+          <use class="vector" href=".//images/icons.svg#arrow-right"></use>
         </svg>
       </button>
-  </div> 
+  </div>
+  <div class="mobile-menu" data-menu>
+    <button class="button__mobile-menu" type="button">
+      <span class="button__title">Buy now</span>
+      <svg class="icon__vector" width="4" height="8">
+        <use class="vector" href=".//images/icons.svg#arrow-right"></use>
+      </svg>
+    </button>
+    <nav class="nav-mobile">
+      <ul class="nav-mobile__list">
+        <li class="nav-mobile__item">
+          <a class="nav-mobile__link nav-mobile__link--current" href="./index.html">Home</a>
+        </li>
+        <li class="nav-mobile__item">
+          <a class="nav-mobile__link" href="#about">About us</a>
+        </li>
+        <li class="nav-mobile__item">
+          <a class="nav-mobile__link" href="#about">How it’s made?</a>
+        </li>
+        <li class="nav-mobile__item">
+          <a class="nav-mobile__link" href="#products">Our products</a>
+        </li>
+        <li class="nav-mobile__item">
+          <a class="nav-mobile__link" href="#contacts">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
