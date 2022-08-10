@@ -82,6 +82,8 @@
   height: 19;
 
   @media screen and(min-width:768px) {
+    font-size: 16px;
+    line-height: 186%;
     width: 73px;
     height: 28px;
   }
@@ -106,6 +108,9 @@
   height: 19px;
 
   @media screen and(min-width:768px) {
+    font-size: 16px;
+    line-height: 186%;
+
     width: 138px;
     height: 28px;
   }
@@ -219,6 +224,8 @@
   line-height: 1.5;
   cursor: pointer;
 
+  transition: 500ms;
+
   color: var(--color__contact);
 
   @media screen and(min-width:768px) {
@@ -253,16 +260,21 @@
 }
 
 .our__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: DM Sans;
   font-weight: 700;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 1.31px;
   color: var(--color__w);
   cursor: pointer;
   text-align: center;
 
   background: var(--color__icon-home);
   border-radius: 22px;
+
+  transition: 500ms;
 
   width: 161px;
   height: 44px;
@@ -277,20 +289,25 @@
   }
 
   &:hover {
-    background: #c7133e;
-    transition: 250ms;
+    background: #b5101b;
+    transform: scale(1.05);
   }
 }
 
 .franch__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: DM Sans;
   font-weight: 700;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 1.31px;
   color: var(--color__accent-first);
   cursor: pointer;
   background: var(--color__w);
   border-radius: 22px;
+
+  transition: 500ms;
 
   width: 161px;
   height: 44px;
@@ -307,5 +324,14 @@
 }
 .franch__btn:hover {
   background: var(--color__btn-hover-bg);
-  transition: 250ms;
+
+  transform: scale(1.05);
+}
+.contacts__svg-white {
+  fill: currentColor;
+  margin-left: 14px;
+}
+.contacts__svg-red {
+  fill: currentColor;
+  margin-left: 14px;
 }
