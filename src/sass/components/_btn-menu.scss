@@ -1,22 +1,41 @@
 
 .btn-menu {
-    @media screen and (min-width: 768px) {
-		display: none;
+    @media screen and (min-width: 1200px) {
+	display: none;
 	}
+    @media screen and (min-width: 768px) {
+		margin-left: auto;
+	}
+    z-index: 1000;
     display:flex;
     justify-content: center;
     align-items: center;
     margin-left: auto;
-    width: 40px;
-    height: 40px;
+    
     padding: 0;
+    outline: none;
     border: none;
     background-color: transparent;
 
 }
+
 .icon__close {
-    opacity: 0;
+	transition: 500ms;
+
+	.btn-menu.is-open & {
+		opacity: 0;
+	}
 }
+
+.icon__burger  {
+	opacity: 0;
+	transition: 500ms;
+
+	.btn-menu.is-open & {
+		opacity: 1;
+	}
+}
+
 .button__mobile-menu {
     width: 209px;
     height: 44px;
@@ -24,4 +43,8 @@
     margin-right: auto;
     background: #FFFFFF;
 border-radius: 22px;
+}
+.button__mobile-menu:hover {
+    cursor: pointer;
+    background-color: var(--color__btn-hover-bg);
 }
