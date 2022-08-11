@@ -29,9 +29,8 @@
   height: 100%;
   padding: 90px 90px;
 
-  background-color: var(--color__w);
-  transition: transform var(--main__transition),
-    opacity var(--main__transition),
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: transform var(--main__transition), opacity var(--main__transition),
     visibility var(--main__transition);
   opacity: 1;
   overflow-y: scroll;
@@ -42,7 +41,7 @@
     opacity: 0;
     pointer-events: none;
   }
-  
+
   @media screen and (max-width: 767px) {
     padding: 90px 16px;
   }
@@ -50,10 +49,18 @@
 
 .modal {
   width: 100%;
+  max-width: 550px;
+  height: 100%;
+  max-height: 609px;
   margin-left: auto;
   margin-right: auto;
   padding: 24px;
-  background-color: var(--color__accent-second);
+  border-radius: 5%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(243, 227, 205, 0.98),
+    rgba(236, 246, 224, 0.98)
+  );
 
   transform: scaleX(1);
   transition: transform var(--main__transition);
@@ -82,8 +89,8 @@
 
 .modal__btn-close {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 16px;
+  right: 16px;
 
   display: flex;
   justify-content: center;
@@ -93,12 +100,12 @@
   padding: 0;
   margin: 0;
 
-  background: var(--color__w);
-  border: 1px solid var(--color__b);
+  background: transparent;
+  border: 2px solid var(--color__b);
   border-radius: 50%;
 }
 
-.modal__list--temp{
+.modal__list--temp {
   display: flex;
   flex-direction: column;
   gap: 12px;
