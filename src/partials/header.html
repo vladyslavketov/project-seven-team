@@ -5,7 +5,14 @@
         <use href=".//images/icons.svg#logo"></use>
       </svg>
     </a> 
-    <nav class="nav">
+    <div class="menu">
+      <button class="btn-menu" type="button" aria-expanded="false" data-menu-button>
+        <svg width="20" height="12" aria-label="switsh mobile menu">
+          <use class="btn-menu__icon-open" href="./images/icons.svg#icon-burger-open"></use>
+          <use class="btn-menu__icon-close" href="./images/icons.svg#icon-burger-close"></use>
+        </svg>
+      </button>
+      <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item">
           <a class="nav__link nav__link--current" href="./index.html">Home</a>
@@ -23,45 +30,14 @@
           <a class="nav__link" href="#contacts">Contact</a>
         </li>
       </ul>
-    </nav>
-    <button class="header__btn-menu" type="button" aria-expanded="false" data-menu-button>
-      <svg width="20" height="12" aria-label="switsh mobile menu">
-        <use class="icon__burger" href="./images/icons.svg#icon-burger-open"></use>
-        <use class="icon__close" href="./images/icons.svg#icon-burger-close"></use>
-      </svg>
-    </button>
-    <button class="button--header button" type="button" data-modal-open--buy>
-      <span class="button__title">Buy now</span>
-      <svg class="icon__vector" width="4" height="8">
-        <use class="vector" href="./images/icons.svg#arrow-right"></use>
-      </svg>
-    </button>
+      </nav>
+      <button class="button button--white button--buy " type="button" data-modal-open--buy>
+        <span class="button__title">Buy now</span>
+        <svg class="icon__vector" width="4" height="8">
+          <use class="vector" href="./images/icons.svg#arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="menu-mobile" data-menu></div>
   </div>
-  <!-- <div class="mobile-menu" data-menu>
-    <button class="button__mobile-menu" type="button">
-      <span class="button__title">Buy now</span>
-      <svg class="icon__vector" width="4" height="8">
-        <use class="vector" href=".//images/icons.svg#arrow-right"></use>
-      </svg>
-    </button>
-    <nav class="nav-mobile">
-      <ul class="nav-mobile__list">
-        <li class="nav-mobile__item">
-          <a class="nav-mobile__link nav-mobile__link--current" href="./index.html">Home</a>
-        </li>
-        <li class="nav-mobile__item">
-          <a class="nav-mobile__link" href="#about">About us</a>
-        </li>
-        <li class="nav-mobile__item">
-          <a class="nav-mobile__link" href="#about">How it’s made?</a>
-        </li>
-        <li class="nav-mobile__item">
-          <a class="nav-mobile__link" href="#products">Our products</a>
-        </li>
-        <li class="nav-mobile__item">
-          <a class="nav-mobile__link" href="#contacts">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </div> -->
 </header>

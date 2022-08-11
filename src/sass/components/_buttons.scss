@@ -1,6 +1,33 @@
- 
  .button {
-    height: 44px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 
-    border-radius: 22px;
+   height: 44px;
+
+   border-radius: 22px;
+
+   &--white {
+      // @extend .button;
+      color: var(---color__accent-first);
+
+      background-color: var(--color__w);
+
+      &:hover,
+      &:focus {
+         background-color: var(--color__btn-hover-bg);
+      }
+   }
+
+   &--accent {
+      // @extend .button;
+      color: var(--color__w);
+
+      background-color: var(---color__accent-first);
+
+      &:hover,
+      &:focus {
+         background-color: var(--color__icon-home);
+      }
+   }
  }
