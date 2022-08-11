@@ -15,6 +15,8 @@
       menuMobile.classList.toggle("is-open");
       document.body.classList.toggle("mobile-menu--is-open");
       menuMobile.append(btnMenu, btnBuy, nav);
+      // menuMobile.replaceWith(menuMain);
+      // menuMain.replaceWith(menuMobile);
   });
 })();
 
