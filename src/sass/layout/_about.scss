@@ -8,6 +8,20 @@
   @media screen and (min-width: 1200px) {
     padding-bottom: 120px;
   }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/background/about-bg_lg.png);
+    background-size: contain;
+    background-position: 0 210px;
+    background-repeat: no-repeat;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background/about-bg_lg@2x.png);
+    }
+  }
 }
 
 .about__container {
@@ -28,19 +42,6 @@
 
   @media screen and (min-width: 768px) {
     background-image: none;
-  }
-
-  @media screen and (min-width: 1200px) {
-    background-image: url(../images/background/about-bg_lg.png);
-    background-size: contain;
-    background-position: 0 175px;
-
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/background/about-bg_lg@2x.png);
-    }
   }
 }
 
