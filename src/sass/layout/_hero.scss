@@ -51,7 +51,7 @@
   opacity: 0;
   transition: opacity 0.3s ease-in-out 0.1.5s;
 
-  .animate & {
+  .animate &._active {
     opacity: 1;
   }
 }
@@ -60,7 +60,7 @@
   opacity: 0;
   transition: opacity 0.3s ease-in-out 0.5s;
 
-  .animate & {
+  .animate &._active {
     opacity: 1;
   }
 }
@@ -69,7 +69,7 @@
   opacity: 0;
   transition: opacity 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
 
-  .animate & {
+  .animate &._active {
     opacity: 1;
   }
 }
@@ -82,7 +82,7 @@
   transform: translateX(-120%);
   transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
 
-  .animate & {
+  .animate &._active {
     transform: translateX(0);
   }
 
@@ -134,7 +134,11 @@
   color: var(--color__w);
   background: var(--color__accent-first);
   transition: background var(--main__transition);
-  animation: fadeIn 0.75s;
+  
+
+&._active {
+animation: fadeIn 0.75s;
+}
 
   &:hover,
   &:focus {
@@ -151,7 +155,10 @@
   color: var(--color__accent-first);
   background: var(--color__w);
   transition: background var(--main__transition);
+
+&._active {
   animation: fadeIn 1.5s;
+}
 
   &:hover,
   &:focus {
@@ -166,6 +173,10 @@
 .subtitle-block {
   display: none;
 
+  &._active {
+    animation: fadeIn 1.5s;
+  }
+
   @media screen and (min-width: 768px) {
     display: initial;
     width: 114px;
@@ -176,7 +187,6 @@
     font-size: 8px;
     line-height: 1.55;
     color: var(--color__w);
-    animation: fadeIn 1.5s;
   }
 
   @media screen and (min-width: 1200px) {
@@ -203,12 +213,15 @@
 .offices {
   display: none;
 
+  &._active {
+    animation: fadeIn 1.5s;
+  }
+
   @media screen and (min-width: 768px) {
     position: absolute;
     display: block;
     top: 92px;
     right: 32px;
-    animation: fadeIn 1.5s;
   }
 
   @media screen and (min-width: 1200px) {
@@ -235,7 +248,11 @@
   position: relative;
   padding-top: 1px;
   padding-right: 8px;
-  animation: fadeIn 1.5s;
+  
+
+  &._active {
+animation: fadeIn 1.5s;
+  }
 
   @media screen and (min-width: 1200px) {
     padding-top: 3px;
@@ -250,7 +267,11 @@
   position: relative;
   padding-top: 2px;
   padding-right: 10px;
-  animation: fadeIn 0.75s;
+  
+
+  &._active {
+animation: fadeIn 0.75s;
+  }
 
   @media screen and (min-width: 1200px) {
     padding-top: 4px;
@@ -307,7 +328,11 @@
   right: 0;
   top: 83px;
   z-index: 1;
-  animation: scaleIn 1.5s;
+  
+
+  &._active {
+animation: scaleIn 1.5s;
+  }
 
   @media screen and (min-width: 768px) {
     right: 185px;
@@ -325,7 +350,11 @@
   right: 32px;
   top: 92px;
   z-index: 2;
-  animation: scaleInOut 2.5s;
+  
+
+  &._active {
+animation: scaleInOut 2.5s;
+  }
 
   @media screen and (min-width: 768px) {
     right: 303px;
@@ -341,13 +370,17 @@
 .hero-img__milk {
   display: none;
 
+  &._active {
+animation: leftSide ease-in 1.5s;
+  }
+
   @media screen and (min-width: 768px) {
     display: inherit;
     position: absolute;
     left: 32px;
     bottom: 16px;
     z-index: 3;
-    animation: leftSide ease-in 1.5s;
+    
   }
 
   @media screen and (min-width: 1200px) {
@@ -359,13 +392,17 @@
 .hero-img__girl {
   display: none;
 
+  &._active {
+animation: fadeInLong 3.5s;
+  }
+
   @media screen and (min-width: 768px) {
     display: inherit;
     position: absolute;
     right: 32px;
     bottom: 1px;
     z-index: 4;
-    animation: fadeInLong 3.5s;
+    
   }
 
   @media screen and (min-width: 1200px) {

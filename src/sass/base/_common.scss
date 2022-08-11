@@ -55,7 +55,7 @@ button {
   font-family: var(--font-f__secondary);
   font-weight: 400;
   font-size: 34px;
-  line-height: calc(39px/34px);
+  line-height: calc(39px / 34px);
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -63,7 +63,7 @@ button {
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
-    line-height: calc(55px/48px);
+    line-height: calc(55px / 48px);
   }
 
   @media screen and (min-width: 1200px) {
@@ -84,7 +84,7 @@ button {
 
   @media screen and (min-width: 768px) {
     font-size: 26px;
-    line-height: calc(30px / 26px);  
+    line-height: calc(30px / 26px);
   }
 
   @media screen and (min-width: 1200px) {
