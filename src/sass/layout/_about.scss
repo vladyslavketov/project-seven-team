@@ -32,15 +32,8 @@
 
   @media screen and (min-width: 1200px) {
     background-image: url(../images/background/about-bg_lg.png);
-    background-size: 2500px;
-    background-position: -200px 175px;
-    transition: background-size 1s ease-in-out,
-      background-position 1s ease-in-out;
-
-    &._active {
-      background-size: contain;
-      background-position: 0 175px;
-    }
+    background-size: contain;
+    background-position: 0 175px;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -106,10 +99,12 @@
     height: 501px;
   }
 
+  transform: scale(0.6);
   opacity: 0;
-  transition: opacity 1.8s ease-in-out;
+  transition: opacity 2s ease-in, transform 2s ease-in;
 
   &._active {
+    transform: scale(1);
     opacity: 1;
   }
 }

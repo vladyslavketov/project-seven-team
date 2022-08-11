@@ -13,31 +13,64 @@
         <use href="./images/close.svg#icon-close"></use>
       </svg>
     </button>
+    <div class="read-more__pictures">
+      <picture>
+        <source
+          media="(min-width:768px )"
+          srcset="
+            ./images/about/modal-read/read-more_md.png    1x,
+            ./images/about/modal-read/read-more_md@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(max-width:767px )"
+          srcset="
+            ./images/about/modal-read/read-more_sm.png    1x,
+            ./images/about/modal-read/read-more_sm@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="read-more__img"
+          src="./images/about/modal-read/read-more_sm.png"
+          alt="man four"
+          width="220"
+          height="220"
+        />
+      </picture>
 
-    <picture>
-      <source
-        media="(min-width:768px )"
-        srcset="
-          ./images/about/modal-read/read-more_md.png    1x,
-          ./images/about/modal-read/read-more_md@2x.png 2x
-        "
-        type="image/png"
-      />
-      <source
-        media="(max-width:767px )"
-        srcset="
-          ./images/about/modal-read/read-more_sm.png    1x,
-          ./images/about/modal-read/read-more_sm@2x.png 2x
-        "
-        type="image/png"
-      />
-      <img
-        class="read-more__img"
-        src="./images/about/modal-read/read-more_sm.png"
-        alt="man four"
-        width="220"
-        height="220"
-      />
-    </picture>
+      <picture>
+        <source
+          media="(min-width:320px )"
+          srcset="
+            ./images/about/modal-read/bottle.png    1x,
+            ./images/about/modal-read/bottle@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="read-more__img"
+          src="./images/about/modal-read/bottle.png"
+          alt="man four"
+          height="220"
+        />
+      </picture>
+    </div>
+    <p class="read-more__text">
+      Milk is a good source of many essential nutrients, including calcium,
+      protein, and vitamin D. Many people see it as a vital part of a balanced
+      diet. Others, however, cite various reasons for choosing not to consume
+      it. Sources of milk and milk products include cows, sheep, camels, goats,
+      and many others.
+    </p>
+
+    <button
+      class="read-more__close-button"
+      type="button"
+      data-modal-close--read
+    >
+      Thanks
+    </button>
   </div>
 </div>

@@ -13,9 +13,57 @@
   fill: currentColor;
 }
 
-.read-more__img {
-  display: block;
+.read-more__pictures {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.read-more__img {
+  max-width: 100%;
+}
+
+.read-more__text {
+  width: 100%;
+
+  font-size: 12px;
+  line-height: 1.62;
+  color: var(--color__b);
+
+  @media screen and (min-width: 768px) {
+    font-size: var(--font-s__main);
+    letter-spacing: 0.04em;
+    line-height: 1.76;
+    color: var(--color__b);
+  }
+}
+
+.read-more__close-button {
+  margin-top: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 176px;
+  height: 44px;
+  border-radius: 22px;
+  justify-content: center;
+  align-items: center;
+
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.31px;
+  color: var(--color__w);
+
+  background-color: var(--color__icon-home);
+
+  margin-top: 30px;
+  @media screen and (max-width: 767px) {
+    margin-top: 50px;
+  }
 }
