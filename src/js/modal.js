@@ -38,13 +38,13 @@
   const refs = {
     openModalBtn: document.querySelector("[data-modal-open--read]"),
     closeModalBtn: document.querySelector("[data-modal-close--read]"),
-    closeModalBtnAdd: document.querySelector("[data-modal-read--close]"),
+    closeModalAdd: document.querySelector("[data-modal-read--close-btn]"),
     modal: document.querySelector("[data-modal--read]"),
   };
 
   refs.openModalBtn.addEventListener("click", toggleModal);
   refs.closeModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtnAdd.addEventListener("click", toggleModal);
+  refs.closeModalAdd.addEventListener("click", toggleModal);
 
   function toggleModal() {
     document.body.classList.toggle("modal-open")
