@@ -48,6 +48,7 @@
   }
 }
 
+
 .advantages__text {  
   font-weight: 700;
   font-size: 12px;
@@ -117,7 +118,10 @@
  * ----------------------------------------
  */
  .text-focus-in {
-	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  &._active {
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+	
 }
 
  @keyframes text-focus-in {
@@ -135,14 +139,21 @@
  * animation number (bounce-in-top)
  * ----------------------------------------
  */
-.bounce-in-top {
-	animation: bounce-in-top 1.1s both;
+ .advantages__number--one {
+  &._active {
+    animation: bounce-in-top 1.1s both;
 }
-.bounce-in-top-two {
-	animation: bounce-in-top 2.1s both;
+  }
+ 
+.advantages__number--two {
+  &._active {
+    animation: bounce-in-top 2.1s both;
 }
-.bounce-in-top-thre {
-	animation: bounce-in-top 3.1s both;
+}
+.advantages__number--thre {
+  &._active {
+    animation: bounce-in-top 3.1s both;
+}	
 }
 
  @keyframes bounce-in-top {
@@ -181,5 +192,6 @@
     animation-timing-function: ease-out;
   }
 }
+
 
 
