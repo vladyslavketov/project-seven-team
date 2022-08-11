@@ -38,7 +38,7 @@
   const refs = {
     openModalBtn: document.querySelector("[data-modal-open--read]"),
     closeModalBtn: document.querySelector("[data-modal-close--read]"),
-        closeModalBtnAdd: document.querySelector("[data-modal-read--close]"),
+    closeModalBtnAdd: document.querySelector("[data-modal-read--close]"),
     modal: document.querySelector("[data-modal--read]"),
   };
 
