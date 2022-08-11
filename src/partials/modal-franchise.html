@@ -1,6 +1,96 @@
-<div class="backdrop is-hidden" data-modal--franchise>
+<!-- <div class="backdrop is-hidden" data-modal--franchise>
   <div class="modal modal--franchise">
-    <button class="modal__btn-close" type="button" data-modal-close--franchise>CLOSE</button>
+    <button class="modal__btn-close" type="button" data-modal-close--franchise>
+      CLOSE
+    </button> -->
     <!-- пишіть свій код під цією лінією -->
+
+    <div class="hero__backdrop is-hidden" data-modal--franchise>
+      <div class="hero__modal">
+        <button class="modal__close" type="submit" data-modal-close--franchise>
+          <svg class="modal__icons" width="15px" height="15px">
+            <use href="./images/franchise.svg#icon-close"></use>
+          </svg>
+        </button>
+        <!-- /* Modal window */ -->
+        <form class="modal__form">
+          <strong class="modal__title"
+            >Leave your details, we will call you back</strong>
+          <div>
+            <label>
+              <span class="modal__label">Name</span>
+              <input
+                class="modal__input"
+                type="name"
+                name="name"
+                id="user_name"
+                required
+              />
+              <svg class="label__icons" width="12" height="12">
+                <use href="./images/franchise.svg#icon-human"></use>
+              </svg>
+            </label>
+          </div>
+          <div>
+            <label>
+              <span class="modal__label">Phone</span>
+              <input
+                class="modal__input"
+                type="tel"
+                name="phone_namber"
+                id="user_tel"
+                required
+              />
+              <svg class="label__icons" width="13" height="13">
+                <use href="./images/franchise.svg#icon-handset"></use>
+              </svg>
+            </label>
+          </div>
+          <div>
+            <label>
+              <span class="modal__label">Email</span>
+              <input
+                class="modal__input"
+                type="email"
+                name="email"
+                id="user_email"
+                required
+              />
+              <svg class="label__icons" width="15" height="12">
+                <use href="./images/franchise.svg#icon-envelope"></use>
+              </svg>
+            </label>
+          </div>
+          <div>
+            <label class="modal-lable-coment">
+              <span class="modal__label">Сomment</span>
+              <textarea
+                class="modal-coment"
+                name="coment"
+                id="user_coment"
+                placeholder="Enter text"
+              ></textarea>
+            </label>
+          </div>
+          <label class="check-label">
+            <input
+              class="visually-hidden checkbox-lable"
+              type="checkbox"
+              name="checkbox"
+              checked/>
+            <span class="form-checkbox-custom">
+              <svg class="checkbox-icon" width="16" height="15">
+                <use href="./images/franchise.svg#icon-check"></use>
+              </svg>
+            </span>
+            <span class="form-checkbox-agreement"
+              >I agree with the newsletter and accept it
+              <a class="conditions" href="#">Terms of an agreement</a>
+            </span>
+          </label>
+          <button class="modal-submit" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </div>
 </div>
