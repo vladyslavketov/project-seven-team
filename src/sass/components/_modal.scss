@@ -86,6 +86,8 @@
 
 .modal__btn-close {
   position: absolute;
+  z-index: 1;
+
   top: 16px;
   right: 16px;
 
@@ -106,4 +108,17 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.modal--locations {
+  position: relative;
+  overflow: hidden;
+
+  max-width: 1050px;
+  padding: 0;
+}
+
+.modal__map-frame {
+  position: absolute;
+  top: -60px;
 }
