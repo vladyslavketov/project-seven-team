@@ -100,9 +100,10 @@
     height: 501px;
   }
 
-  transform: scale(0.6);
-  opacity: 0;
-  transition: opacity 2s ease-in, transform 2s ease-in;
+  transform: scale(0.9);
+  opacity: 0.4;
+  transition: opacity var(--transition__scroll),
+    transform var(--transition__scroll);
 
   &._active {
     transform: scale(1);
