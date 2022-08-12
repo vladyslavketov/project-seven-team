@@ -1,0 +1,39 @@
+.upward {
+  position: fixed;
+  bottom: 600px;
+  right: 35px;
+
+  width: 65px;
+  height: 65px;
+
+  border-radius: 50%;
+  background-color: var(--color__accent-second);
+
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--main__transition);
+
+  @media screen and (min-width: 1410px) {
+    right: calc(((100% - 1200px) / 2) - 70px);
+  }
+}
+
+.btn__upward {
+  fill: var(--color__accent-first);
+  fill: var(--color__w);
+
+  transform: rotate(-90deg);
+  opacity: 0.8;
+}
+
+.upward.active {
+  bottom: 35px;
+  visibility: visible;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
