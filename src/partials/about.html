@@ -3,39 +3,54 @@
     <p class="about__uppertitle uppertitle">tradition and love</p>
     <h2 class="about__title title">how it’s made?</h2> 
     <div class="about__info">
-      <picture>
-        <source
-          media="(min-width:1200px )"
-          srcset="
-            ./images/about/about_lg.png    1x,
-            ./images/about/about_lg@2x.png 2x
-          "
-          type="image/png"
-        />
-        <source
-          media="(min-width:768px )"
-          srcset="
-            ./images/about/about_md.png    1x,
-            ./images/about/about_md@2x.png 2x
-          "
-          type="image/png"
-        />
-        <source
-          media="(max-width:767px )"
-          srcset="
-            ./images/about/about_sm.png    1x,
-            ./images/about/about_sm@2x.png 2x
-          "
-          type="image/png"
-        />
-        <img
-          class="about__img _anim-items"
-          src="./images/about/about_sm.png"
-          alt="man four"
-          width="280"
-          height="279"
-        />
-      </picture>
+      <div class="about__picture">
+        <picture>
+          <source
+            media="(min-width:1200px )"
+            srcset="
+              ./images/about/about_lg.png    1x,
+              ./images/about/about_lg@2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width:768px )"
+            srcset="
+              ./images/about/about_md.png    1x,
+              ./images/about/about_md@2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(max-width:767px )"
+            srcset="
+              ./images/about/about_sm.png    1x,
+              ./images/about/about_sm@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="about__img _anim-items _anim-no-hide"
+            src="./images/about/about_sm.png"
+            alt="cow"
+            width="280"
+            height="279"
+          />
+        </picture>
+        <picture>
+          <source
+            media="(min-width:360px )"
+            srcset="./images/about/moooh.png"
+            type="image/png"
+          />
+          <img
+            class="moooh"
+            src="./images/about/moooh.png"
+            alt="mooh"
+            width="200"
+          />
+        </picture>
+      </div>
       <div class="about__description">
         <p class="about__first-text">
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
