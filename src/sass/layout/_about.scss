@@ -101,13 +101,44 @@
   }
 
   transform: scale(0.9);
-  opacity: 0.4;
+  opacity: 0;
   transition: opacity var(--transition__scroll),
     transform var(--transition__scroll);
 
   &._active {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+.about__picture {
+  position: relative;
+}
+
+.moooh {
+  opacity: 0;
+  transition: var(--transition__hover);
+  position: absolute;
+
+  top: 55%;
+  left: 65%;
+
+  max-width: 100%;
+  width: 100px;
+
+  top: 55%;
+  left: 65%;
+
+  .about__picture:hover &,
+  .about__picture:focus & {
+    opacity: 1;
+  }
+
+  @media screen and(min-width: 1200px) {
+    top: 50%;
+
+    left: 75%;
+    width: 200px;
   }
 }
 
