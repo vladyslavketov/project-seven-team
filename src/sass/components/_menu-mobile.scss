@@ -66,18 +66,13 @@
 
 .menu-mobile .nav__link {
 	display: block;
-	font-weight: 700;
+	padding: 12px 20px;
+
 	font-size: 14px;
 	line-height: 1.29;
-	color:var( --color__w);
-	padding: 12px 20px;
 }
 
 .menu-mobile .button--buy {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
 	width: 100%;
 
 	@media screen and (min-width: 768px) {

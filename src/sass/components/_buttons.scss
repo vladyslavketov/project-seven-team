@@ -1,15 +1,11 @@
  .button {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-
+   @extend %flex;
    height: 44px;
 
    border-radius: 22px;
 
    &--white {
-      // @extend .button;
-      color: var(---color__accent-first);
+      color: var(--color__accent-first);
 
       background-color: var(--color__w);
 
@@ -20,14 +16,13 @@
    }
 
    &--accent {
-      // @extend .button;
       color: var(--color__w);
 
-      background-color: var(---color__accent-first);
+      background-color: var(--color__accent-first);
 
       &:hover,
       &:focus {
-         background-color: var(--color__icon-home);
+         background-color: var(--color__btn-hover-bg2);
       }
    }
  }

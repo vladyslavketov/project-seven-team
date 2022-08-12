@@ -133,10 +133,10 @@
 .button--buy {
   width: 160px;
   
-  background: var(--color__w);
-
-  @media screen and (max-width: 767px) {
-    display: none;
+  .menu & {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 }
 

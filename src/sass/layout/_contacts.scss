@@ -260,24 +260,14 @@
 }
 
 .our__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: DM Sans;
+  width: 161px;
+
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.31px;
-  color: var(--color__w);
-  cursor: pointer;
   text-align: center;
 
-  background: var(--color__icon-home);
-  border-radius: 22px;
-
+  background: var(--color__btn-location-bg);
   transition: 500ms;
-
-  width: 161px;
-  height: 44px;
 
   @media screen and (min-width: 768px) {
     width: 191px;
@@ -287,43 +277,27 @@
     width: 198px;
     margin-right: 12px;
   }
-
-  &:hover {
-    background: #b5101b;
-  }
 }
 
 .franch__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: DM Sans;
+  width: 161px;
+  margin-top: 10px;
+
   font-weight: 700;
-  font-size: 16px;
+  // font-size: 16px;
   line-height: 1.31px;
-  color: var(--color__accent-first);
-  cursor: pointer;
-  background: var(--color__w);
-  border-radius: 22px;
 
   transition: 500ms;
-
-  width: 161px;
-  height: 44px;
-  margin-top: 10px;
 
   @media screen and (min-width: 768px) {
     width: 174px;
     margin-top: 0;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     width: 168px;
-    margin-top: 0;
   }
 }
-.franch__btn:hover {
-  background: var(--color__btn-hover-bg);
-}
+
 .contacts__svg-white {
   fill: currentColor;
   margin-left: 14px;

@@ -1,4 +1,8 @@
 import $ from 'jquery';
+const menuDeskBtn = document.querySelector('[menu-desk-btn]');
+const menuDesk = document.querySelector('[menu-desk]');
+const menuMob = document.querySelector('[menu-mob]');
+const menuMobBtn = document.querySelector('[menu-mob-btn]');
 $(document).ready(function () {
   // Add smooth scrolling to all links
   $('a').on('click', function (event) {
@@ -18,14 +22,16 @@ $(document).ready(function () {
         function () {
           // Add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;
-        },
+        }
       );
     }
+    if (menuMob.classList.value !== 'menu-mobile is-open') {
+      return;
+    }
+    menuMob.classList.toggle('is-open');
+    menuDeskBtn.classList.toggle('is-open');
+    menuDesk.classList.toggle('is-open');
+    menuMobBtn.classList.toggle('is-open');
+    document.body.classList.toggle('menu-mobile-open');
   });
 });
-
-
-
-
-
-

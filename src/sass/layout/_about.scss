@@ -171,28 +171,14 @@
 }
 
 .about__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 176px;
-  height: 44px;
   margin-top: 20px;
 
   font-weight: 700;
   font-size: 14px;
   line-height: calc(18px / 14px);
   text-align: center;
-  color: var(--color__accent-first);
-
-  background: var(--color__w);
-  border-radius: 22px;
-
   transition: background-color var(--main__transition);
-
-  &:hover,
-  &:focus {
-    background-color: var(--color__btn-hover-bg);
-  }
 
   @media screen and (min-width: 768px) {
     font-size: var(--font-s__main);
