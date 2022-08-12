@@ -7,72 +7,40 @@
     </button>
     <!-- пишіть свій код під цією лінією -->
     <form class="modal__form">
-      <strong class="modal__title"
-        >Leave your details, we will call you back</strong
-      >
-      <div>
-        <label class="modal__label-wrap">
-          <span class="modal__label">Name</span>
-          <input
-            class="modal__input"
-            type="name"
-            name="name"
-            id="user_name"
-            required
-          />
-          <svg class="label__icons" width="12" height="12">
-            <use href="./images/franchise.svg#icon-human"></use>
-          </svg>
-        </label>
-      </div>
-      <div>
-        <label class="modal__label-wrap">
-          <span class="modal__label">Phone</span>
-          <input
-            class="modal__input"
-            type="tel"
-            name="phone_namber"
-            id="user_tel"
-            required
-          />
+      <strong class="modal__title">Leave your details, we will call you back</strong>
+      <label class="modal__label-wrap">
+        <span class="modal__label">Name</span>
+        <div class="input__wrap">
+          <input class="modal__input" type="text" name="name">
+        <svg class="label__icons" width="12" height="12">
+          <use href="./images/franchise.svg#icon-human"></use>
+        </svg>
+        </div>
+      </label>
+      <label class="modal__label-wrap">
+        <span class="modal__label">Phone</span>
+        <div class="input__wrap">
+          <input class="modal__input" type="tel" name="phone_namber">
           <svg class="label__icons" width="13" height="13">
-            <use href="./images/franchise.svg#icon-handset"></use>
+           <use href="./images/franchise.svg#icon-handset"></use>
           </svg>
-        </label>
-      </div>
-      <div>
-        <label class="modal__label-wrap">
-          <span class="modal__label">Email</span>
-          <input
-            class="modal__input"
-            type="email"
-            name="email"
-            id="user_email"
-            required
-          />
+        </div>
+      </label>
+      <label class="modal__label-wrap">
+        <span class="modal__label">Email</span>
+        <div class="input__wrap">
+          <input class="modal__input" type="email" name="email">
           <svg class="label__icons" width="15" height="12">
             <use href="./images/franchise.svg#icon-envelope"></use>
           </svg>
-        </label>
-      </div>
-      <div>
-        <label class="modal-lable-coment">
-          <span class="modal__label">Сomment</span>
-          <textarea
-            class="modal-coment"
-            name="coment"
-            id="user_coment"
-            placeholder="Enter text"
-          ></textarea>
-        </label>
-      </div>
+        </div>
+      </label>
+      <label class="modal-lable-coment">
+        <span class="modal__label">Сomment</span>
+        <textarea class="modal-coment" name="coment" placeholder="Enter text"></textarea>
+      </label>
       <label class="check-label">
-        <input
-          class="visually-hidden checkbox-lable"
-          type="checkbox"
-          name="checkbox"
-          checked
-        />
+        <input class="visually-hidden checkbox-lable" type="checkbox" name="checkbox" checked />
         <span class="form-checkbox-custom">
           <svg class="checkbox-icon" width="16" height="15">
             <use href="./images/franchise.svg#icon-check"></use>

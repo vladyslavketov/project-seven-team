@@ -143,20 +143,25 @@
   display: flex;
 }
 
-.modal__label-wrap {
+.input__wrap {
   position: relative;
 }
 
-.modal__input + .label__icons {
+.input__wrap .label__icons {
   position: absolute;
-  left: 14;
-  top: 42;
+  // top: 42;
+  // left: 14;
+  top: 50%;
+  left: 14px;
+  
 
   display: flex;
   align-items: center;
   justify-content: center;
   width: 12px;
   height: 12px;
+
+  transform: translateY(-50%);
 }
 
 .modal-coment::placeholder {
