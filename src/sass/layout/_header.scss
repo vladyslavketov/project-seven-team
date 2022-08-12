@@ -1,7 +1,9 @@
 .header {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   padding-top: 8px;
-
-  background-color: var(--color__products-1);
+  z-index: 5;
 
   @media screen and (min-width: 768px) {
     padding-top: 32px;
