@@ -290,7 +290,6 @@
 
   &:hover {
     background: #b5101b;
-    transform: scale(1.05);
   }
 }
 
@@ -324,8 +323,6 @@
 }
 .franch__btn:hover {
   background: var(--color__btn-hover-bg);
-
-  transform: scale(1.05);
 }
 .contacts__svg-white {
   fill: currentColor;
