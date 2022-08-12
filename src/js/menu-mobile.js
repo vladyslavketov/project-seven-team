@@ -28,6 +28,6 @@
 
     menuDesk.classList.remove("is-open");
     menuMob.classList.remove("is-open");
-    document.body.classList.remove("is-open");
+    document.body.classList.remove("menu-mobile-open");
   });
 })();
