@@ -1,6 +1,6 @@
 <div class="backdrop is-hidden" data-modal--locations>
   <div class="modal modal--locations">
-    <button class="modal__btn-close" type="button" data-modal-close--locations>
+    <button class="modal-btn__close  modal__btn-close" type="button" data-modal-close--locations>
       <svg
         class="modal__close-icon modal__close-icon--read"
         width="18"
@@ -10,11 +10,9 @@
       </svg>
     </button>
     <!-- пишіть свій код під цією лінією -->
-    <iframe
-      class="modal__map-frame"
-      src="https://www.google.com/maps/d/u/0/embed?mid=17G2R9cuLchgI18ky3SrKCtJLITw5oKU&ehbc=2E312F%22&ll=38.03888869832969%2C-96.12907725000002&z=5"
-      width="100%"
-      height="580px"
-    ></iframe>
+    <div class="locations">
+      <h2 class="locations__title title">Шукайте нас за адресами:</h2>
+      <iframe class="locations__map" src="https://www.google.com/maps/d/embed?mid=17G2R9cuLchgI18ky3SrKCtJLITw5oKU&ehbc=2E312F" width="100%" height="100%"></iframe>
+    </div>
   </div>
 </div>

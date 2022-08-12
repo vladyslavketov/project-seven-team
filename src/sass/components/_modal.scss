@@ -1,4 +1,65 @@
-.modal__open-btn {
+
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  padding: 90px 90px;
+
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: transform var(--main__transition), opacity var(--main__transition),
+  visibility var(--main__transition);
+  opacity: 1;
+  overflow-y: scroll;
+  z-index: 10;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 90px 16px;
+  }
+}
+
+.modal {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-width: 480px;
+  max-height: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px;
+
+  border-radius: var(--border-radius__main);
+  background-color: var(--color__footer-bg);
+
+  transform: scaleX(1);
+  transition: transform var(--main__transition);
+
+  @media screen and (min-width: 768px) {
+    padding: 28px;
+    width: 480px;
+    height: 640px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scaleX(1.2);
+}
+
+.modal-btn__open {
   display: block;
   margin-top: 30px;
   margin-left: auto;
@@ -20,71 +81,7 @@
   }
 }
 
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-  padding: 90px 90px;
-
-  background-color: rgba(0, 0, 0, 0.3);
-  transition: transform var(--main__transition), opacity var(--main__transition),
-    visibility var(--main__transition);
-  opacity: 1;
-  overflow-y: scroll;
-  z-index: 10;
-
-  &.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  @media screen and (max-width: 767px) {
-    padding: 90px 16px;
-  }
-}
-
-.modal {
-  width: 100%;
-  min-height: 440px;
-  max-width: 550px;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 24px;
-  border-radius: 5%;
-  background-color: var(--color__footer-bg);
-  display: flex;
-
-  transform: scaleX(1);
-  transition: transform var(--main__transition);
-
-  // @media screen and (min-width: 480px) {
-  //   width: 450px;
-  //   height: 609px;
-  // }
-
-  // @media screen and (min-width: 768px) and (min-height: 609px) {
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%);
-  // }
-
-  // @media screen and (min-width: 1200px) {
-  //   width: 528px;
-  //   height: 581px;
-  // }
-}
-
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scaleX(1.2);
-}
-
-.modal__btn-close {
+.modal-btn__close {
   position: absolute;
   z-index: 1;
 
@@ -104,21 +101,7 @@
   border-radius: 50%;
 }
 
-.modal__list--temp {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.modal--locations {
-  position: relative;
-  overflow: hidden;
-
-  max-width: 1050px;
-  padding: 0;
-}
-
-.modal__map-frame {
-  position: absolute;
-  top: -60px;
-}
+// .modal__map-frame {
+//   position: absolute;
+//   top: -60px;
+// }
