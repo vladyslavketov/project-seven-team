@@ -49,7 +49,7 @@
 
 .ice-cream {
   opacity: 0;
-  transition: opacity 0.3s ease-in-out 0.1.5s;
+  transition: opacity 0.3s ease-in-out 0.1s;
 
   .animate &._active {
     opacity: 1;
@@ -58,7 +58,7 @@
 
 .made {
   opacity: 0;
-  transition: opacity 0.3s ease-in-out 0.5s;
+  transition: opacity 0.3s ease-in-out 0.3;
 
   .animate &._active {
     opacity: 1;
@@ -67,7 +67,7 @@
 
 .with {
   opacity: 0;
-  transition: opacity 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+  transition: opacity 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
 
   .animate &._active {
     opacity: 1;
@@ -80,7 +80,7 @@
   line-height: 0.965;
   color: var(--color__accent-first);
   transform: translateX(-120%);
-  transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+  transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1) 1s;
 
   .animate &._active {
     transform: translateX(0);
@@ -157,7 +157,7 @@ animation: fadeIn 0.75s;
   transition: background var(--main__transition);
 
 &._active {
-  animation: fadeIn 1.5s;
+  animation: fadeIn 1s;
 }
 
   &:hover,
@@ -174,7 +174,7 @@ animation: fadeIn 0.75s;
   display: none;
 
   &._active {
-    animation: fadeIn 1.5s;
+    animation: fadeIn 1.2s;
   }
 
   @media screen and (min-width: 768px) {
@@ -214,7 +214,7 @@ animation: fadeIn 0.75s;
   display: none;
 
   &._active {
-    animation: fadeIn 1.5s;
+    animation: fadeIn 1.2s;
   }
 
   @media screen and (min-width: 768px) {
@@ -251,7 +251,7 @@ animation: fadeIn 0.75s;
   
 
   &._active {
-animation: fadeIn 1.5s;
+animation: fadeIn 1.2s;
   }
 
   @media screen and (min-width: 1200px) {
@@ -270,7 +270,7 @@ animation: fadeIn 1.5s;
   
 
   &._active {
-animation: fadeIn 0.75s;
+animation: fadeIn 1s;
   }
 
   @media screen and (min-width: 1200px) {
@@ -353,7 +353,7 @@ animation: scaleIn 1.5s;
   
 
   &._active {
-animation: scaleInOut 2.5s;
+animation: scaleInOut 2s;
   }
 
   @media screen and (min-width: 768px) {
@@ -393,7 +393,7 @@ animation: leftSide ease-in 1.5s;
   display: none;
 
   &._active {
-animation: fadeInLong 3.5s;
+animation: fadeInLong 2.5s;
   }
 
   @media screen and (min-width: 768px) {
