@@ -1,0 +1,11 @@
+.locations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.locations__title {
+  font-size: 20px;
+}
