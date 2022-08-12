@@ -135,26 +135,27 @@
   letter-spacing: 0.01em;
 
   color: var(--color__contact);
-  padding-bottom: 4px;
-  padding-top: 10px;
 }
 
 .modal__label:not(:last-child) {
   display: flex;
+  margin-bottom: 4px;
 }
 
-.input__wrap {
+.modal__label-wrap {
   position: relative;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
 }
 
-.input__wrap .label__icons {
+.modal__label-wrap .label__icons {
   position: absolute;
-  // top: 42;
-  // left: 14;
-  top: 50%;
+  bottom: 8px;
   left: 14px;
   
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -165,6 +166,8 @@
 }
 
 .modal-coment::placeholder {
+  margin-top: 10px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -173,20 +176,25 @@
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-coment {
-  resize: none;
+.modal-lable-coment {
+  display: block;
+  margin-top: 8px;
+}
+
+.modal-coment {  
   width: 100%;
   height: 120px;
+  padding: 12px 16px;
+  padding-top: 4px;
 
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
 
-  padding: 12px 16px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-
+  resize: none;
   @media screen and (min-width: 1200px) {
     font-size: 12px;
     line-height: 1.17;
@@ -195,7 +203,6 @@
 
 .check-label {
   display: block;
-  margin-top: 20px;
   font-size: 12px;
 
   @media screen and (min-width: 768px) {
